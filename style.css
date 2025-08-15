@@ -1,0 +1,28 @@
+:root {
+  --brand-primary: #3f6df1;
+  --brand-dark: #111318;
+}
+
+/* Hero banner with soft gradient */
+.hero {
+  min-height: 60vh;
+  background:
+    radial-gradient(1200px 600px at 90% -10%, rgba(63,109,241,0.35), transparent 70%),
+    radial-gradient(800px 400px at -10% 10%, rgba(111,66,193,0.35), transparent 70%),
+    linear-gradient(135deg, #0d1117 0%, #1c2333 50%, #0d1b2a 100%);
+}
+
+/* Card tweaks */
+.card .icon-wrap {
+  line-height: 0;
+}
+.card-title {
+  font-weight: 700;
+}
+.navbar-brand { letter-spacing: 0.3px; }
+
+/* Improve focus states */
+.btn:focus, .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(63, 109, 241, 0.25);
+  border-color: var(--brand-primary);
+}

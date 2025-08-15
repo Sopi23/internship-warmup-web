@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archers Tek — Company Introduction</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Icons (optional, used for nice icons) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Archers Tek</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-lg-3" href="contact.html">
+              <i class="bi bi-envelope"></i> Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Banner -->
+  <header class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-5 fw-bold">We build simple, scalable software.</h1>
+      <p class="lead opacity-75 mt-3">
+        Archers Tek helps startups and teams ship high-quality web & mobile apps faster.
+      </p>
+      <div class="mt-4">
+        <a href="#about" class="btn btn-light me-2">Learn More</a>
+        <a href="contact.html" class="btn btn-outline-light">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Us -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <h2 class="fw-bold mb-3">About Archers Tek</h2>
+          <p class="text-secondary">
+            We’re a small team of engineers focused on clean architecture, great UX,
+            and reliable delivery. From MVPs to production systems, we partner with you
+            to hit the target—every sprint.
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Modern stacks & best practices</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Responsive, accessible UIs</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Focus on quality & maintainability</li>
+          </ul>
+          <a class="btn btn-primary mt-2" href="contact.html">Work With Us</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="icon-wrap mb-2"><i class="bi bi-speedometer2 fs-2 text-primary"></i></div>
+                  <h5 class="card-title">Performance</h5>
+                  <p class="card-text text-secondary">
+                    We optimize for speed and smooth interactions across devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="icon-wrap mb-2"><i class="bi bi-shield-lock fs-2 text-primary"></i></div>
+                  <h5 class="card-title">Security</h5>
+                  <p class="card-text text-secondary">
+                    Sensible defaults, secure patterns, and continuous improvements.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="icon-wrap mb-2"><i class="bi bi-phone fs-2 text-primary"></i></div>
+                  <h5 class="card-title">Responsive</h5>
+                  <p class="card-text text-secondary">
+                    Pixel-perfect layouts that adapt beautifully on mobile and desktop.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="icon-wrap mb-2"><i class="bi bi-people fs-2 text-primary"></i></div>
+                  <h5 class="card-title">Collaboration</h5>
+                  <p class="card-text text-secondary">
+                    Clear communication and iterative delivery to keep you in the loop.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div><!-- row -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white-50">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+      <small>© <span id="year"></span> Archers Tek. All rights reserved.</small>
+      <small><i class="bi bi-github"></i> Build with Bootstrap 5</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
